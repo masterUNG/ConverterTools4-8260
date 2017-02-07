@@ -1,4 +1,4 @@
-﻿package rtc.suranya.patcharee.convertertools;
+package rtc.suranya.patcharee.convertertools;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -28,15 +28,10 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
     private String[] titleStrings, lengthStrings, tempStrings, areaStrings,
             volumeStrings, weightStrings, timeStrings, spinnerStrings;
     private MyConstant myConstant;
-    private double rowMatADouble, baseADouble; // สิ่งที่รับจาก Edit  abc text
+    private double rowMatADouble, baseADouble; // ????????????? Edit  abc text
     private String unitString;
     private double[] factorDoubles, valueDoubles;
     private int tempAnInt = 0;
-
-
-
-
-
 
 
     @Override
@@ -63,7 +58,7 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
         //show spinner
 
 
-        //การกำหนดค่า Array ใหั Spinner , Factor
+        //??????????? Array ??? Spinner , Factor
         switch (indexAnInt) {
             case 0:
                 spinnerStrings = myConstant.getLengthStrings();
@@ -71,7 +66,7 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
                 break;
             case 1:
                 spinnerStrings = myConstant.getTempStrings();
-                //factorDoubles = myConstant.getTempDoubles();    // แก้ไข สูตร C/100 = (F-32)/180
+                //factorDoubles = myConstant.getTempDoubles();    // ????? ???? C/100 = (F-32)/180
                 factorDoubles = myTempCalculate();
                 break;
             case 2:
@@ -126,9 +121,6 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
         button.setOnClickListener(this);
 
 
-
-
-
     }   // main method
 
     public void setIndexSpinnerChoseAnInt(int indexSpinnerChoseAnInt) {
@@ -176,7 +168,7 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
 
             rowMatADouble = Double.parseDouble(s);
             Log.d("4decV1", "rowMat ==> " + rowMatADouble + " " + unitString);
-            Log.d("4decV1", "tempAnint เมื่อคลิก ==> " + tempAnInt);
+            Log.d("4decV1", "tempAnint ????????? ==> " + tempAnInt);
 
 
             //Create Spinner
@@ -186,7 +178,7 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
 
                 switch (tempAnInt) {
                     case 0:
-                        valueDoubles[0] =  rowMatADouble;
+                        valueDoubles[0] = rowMatADouble;
                         valueDoubles[1] = ((1.8) * rowMatADouble) + 32;
                         break;
                     case 1:
@@ -203,7 +195,7 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
                 Log.d("4decV1", "base ==> " + baseADouble);
 
                 valueDoubles = new double[factorDoubles.length];
-                for (int i=0;i<factorDoubles.length;i++) {
+                for (int i = 0; i < factorDoubles.length; i++) {
                     valueDoubles[i] = factorDoubles[i] * baseADouble;
                 }
             }
@@ -213,7 +205,6 @@ public class Calculate extends AppCompatActivity implements View.OnClickListener
 
 
         }   // if
-
 
 
     }   // onClick

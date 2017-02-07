@@ -1,4 +1,4 @@
-﻿package rtc.suranya.patcharee.convertertools;
+package rtc.suranya.patcharee.convertertools;
 
 /**
  * Created by masterUNG on 12/4/2016 AD.
@@ -47,15 +47,15 @@ public class MyConstant {
     public double[] getLengthDoubles() {
 
         lengthDoubles = new double[10];
-        lengthDoubles[0] = 1000;
-        lengthDoubles[1] = 100;
-        lengthDoubles[2] = 1;
+        lengthDoubles[0] = 1000.0;
+        lengthDoubles[1] = 100.0;
+        lengthDoubles[2] = 1.0;
         lengthDoubles[3] = 0.001;
         lengthDoubles[4] = 39.3433;
         lengthDoubles[5] = 1.0936133;
         lengthDoubles[6] = 3.2808399;
         lengthDoubles[7] = 0.393700787;
-        lengthDoubles[8] = 1000000;
+        lengthDoubles[8] = 1000000.0;
         lengthDoubles[9] = 0.000621371192;
 
 
@@ -75,7 +75,7 @@ public class MyConstant {
     public double[] getTempDoubles() {
 
         tempDoubles = new double[3];
-        tempDoubles[0] = 1;
+        tempDoubles[0] = 1.0;
         tempDoubles[1] = 1.8000;
 
 
@@ -104,13 +104,13 @@ public class MyConstant {
     public double[] getAreaDoubles() {
 
         areaDoubles = new double[12];
-        areaDoubles[0] = 1;
+        areaDoubles[0] = 1.0;
         areaDoubles[1] = 0.000001000000;
         areaDoubles[2] = 10000.00;
         areaDoubles[3] = 1000000;
         areaDoubles[4] = 3.861022;
         areaDoubles[5] = 10.76391;
-        areaDoubles[6] = 1550;
+        areaDoubles[6] = 1550.0;
         areaDoubles[7] = 1.195990046;
         areaDoubles[8] = 0.015500031;
         areaDoubles[9] = 1000000;
@@ -144,7 +144,7 @@ public class MyConstant {
     public double[] getVolumeDoubles() {
 
         volumeDoubles = new double[13];
-        volumeDoubles[0] = 1;
+        volumeDoubles[0] = 1.0;
         volumeDoubles[1] = 61023.74;
         volumeDoubles[2] = 100000.0;
         volumeDoubles[3] = 1000000000;
@@ -179,7 +179,7 @@ public class MyConstant {
     public double[] getWeightDoubles() {
 
         weightDoubles = new double[8];
-        weightDoubles[0] = 1;
+        weightDoubles[0] = 1.0;
         weightDoubles[1] = 1000.000;
         weightDoubles[2] = 1000000;
         weightDoubles[3] = 0.00110231131;
@@ -207,9 +207,9 @@ public class MyConstant {
     public double[] getTimeDoubles() {
         timeDoubles = new double[5];
         timeDoubles[0] = 86400.00;
-        timeDoubles[1] = 1440;
-        timeDoubles[2] = 24;
-        timeDoubles[3] = 1;
+        timeDoubles[1] = 1440.0;
+        timeDoubles[2] = 24.0;
+        timeDoubles[3] = 1.0;
         timeDoubles[4] = 0.142857143;
 
         return timeDoubles;

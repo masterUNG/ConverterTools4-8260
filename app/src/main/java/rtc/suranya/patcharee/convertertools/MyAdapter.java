@@ -1,10 +1,13 @@
 package rtc.suranya.patcharee.convertertools;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import rtc.surunya.patcharee.convertertools.R;
 
 /**
  * Created by masterUNG on 12/4/2016 AD.
